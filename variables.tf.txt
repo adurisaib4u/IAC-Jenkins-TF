@@ -1,24 +1,14 @@
-variable "IAC-Jenkins-TF" {
-  description = "Name of the resource group where the web app will be created"
-  type        = string
+variable "existing_resource_group_name" {
+  description = "The name of the existing resource group where the web app will be deployed."
+  default     = "IAC-Jenkins-TF"
 }
 
-variable "Basic B1" {
-  description = "Name of the App Service Plan"
-  type        = string
+variable "app_service_plan_name" {
+  description = "The name of the Basic App Service Plan."
+  default     = "basic-plan"
 }
 
-variable "East US" {
-  description = "Azure region where the resources will be deployed"
-  type        = string
-}
-
-variable "TerraformAzureWebApp" {
-  description = "Name of the Azure Web App"
-  type        = string
-}
-
-variable "app_settings" {
-  description = "App settings for the web app"
-  type        = map(string)
+variable "app_service_name" {
+  description = "The name of the App Service (web app)."
+  default     = "TerraformWebapp"
 }
