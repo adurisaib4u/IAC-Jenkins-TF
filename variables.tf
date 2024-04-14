@@ -5,7 +5,7 @@ variable "existing_resource_group_name" {
 
 variable "azurerm_service_plan" {
   description = "The name of the Basic App Service Plan."
-  default     = "basic-plan"
+  default     = "Windowsappteraformplan"
 }
 
 variable "azurerm_windows_web_app" {
