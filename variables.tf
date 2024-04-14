@@ -3,7 +3,7 @@ variable "existing_resource_group_name" {
   default     = "IAC-Jenkins-TF"
 }
 
-variable "app_service_plan_name" {
+variable "azurerm_service_plan" {
   description = "The name of the Basic App Service Plan."
   default     = "basic-plan"
 }
