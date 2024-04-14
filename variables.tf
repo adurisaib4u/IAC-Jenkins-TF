@@ -8,7 +8,7 @@ variable "azurerm_service_plan" {
   default     = "basic-plan"
 }
 
-variable "app_service_name" {
+variable "azurerm_windows_web_app" {
   description = "The name of the App Service (web app)."
   default     = "TerraformWebapp"
 }
