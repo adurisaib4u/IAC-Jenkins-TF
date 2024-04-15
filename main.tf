@@ -1,5 +1,8 @@
 provider "azurerm" {
   features {}
+
+  # Add skip_provider_registration flag here
+  skip_provider_registration = true
 }
 
 # Reference the existing resource group
