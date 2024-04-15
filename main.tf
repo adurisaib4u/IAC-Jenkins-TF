@@ -19,7 +19,7 @@ resource "azurerm_windows_web_app" "example" {
   name                = var.azurerm_windows_web_app
   resource_group_name = data.azurerm_resource_group.existing.name
   location            = data.azurerm_resource_group.existing.location
-  service_plan_id     = azurerm_service_plan.example.id  # Add the service_plan_id argument here
+  service_plan_id     = azurerm_service_plan.example.id
 
   site_config {}
 }
