@@ -10,5 +10,5 @@ variable "azurerm_service_plan" {
 
 variable "azurerm_windows_web_app" {
   description = "The name of the App Service (web app)."
-  default     = "SaiTerraformWindowsJenkinsWebapp"
+  default     = "SaiKannaTerraformWindowsWebapp"
 }    
